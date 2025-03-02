@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Time</title>
+</head>
+<body>
+    <h1 id="History">Current Time</h1>
+    <p id="time"></p>
+    <button onclick="updateTime()">Update Time</button>
+
+    <script>
+        function updateTime() {
+            var currentTime = new Date();
+            var timeString = currentTime.toLocaleTimeString(); // Formats only time
+            document.getElementById("time").textContent = "The current time is: " + timeString;
+        }
+    </script>
+</body>
+</html>
