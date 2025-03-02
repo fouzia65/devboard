@@ -5,7 +5,7 @@ function changeNumber(){
     number--
     document.getElementById('task-dec').innerText = number;
     if(number == 0){
-      alert("all task completed")
+      alert("congrates!! you have completed all the current task")
     }
   }
   

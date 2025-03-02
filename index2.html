@@ -4,19 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Time</title>
+    <title>2nd page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1 id="History">Current Time</h1>
-    <p id="time"></p>
-    <button onclick="updateTime()">Update Time</button>
-
-    <script>
-        function updateTime() {
-            var currentTime = new Date();
-            var timeString = currentTime.toLocaleTimeString(); // Formats only time
-            document.getElementById("time").textContent = "The current time is: " + timeString;
-        }
-    </script>
+<body class="bg-blue-200  p-10">
+   <header class="flex justify-between w-4/5 mx-auto  p-10 bg-white">
+    <div class="flex justify-center items-center gap-3">
+        <img src="./assets/logo.png" class="w-15" alt="">
+        <p class="text-3xl ">Dev<span class="text-3xl font-bold" >Board</span></p>
+    </div>
+    <button class="text-2xl font-bold bg-blue-500 p-8 rounded-lg" onclick="backToMain()">Back to desk</button>
+   </header>
+   <h1 class="text-4xl font-bold text-center mt-8">Blogs</h1>
+   <section class="grid gap-4 w-4/5 mx-auto mt-10">
+    <div class="bg-white p-10">
+        <p class="text-3xl font-bold">Question-1: What are the different ways to select an element in the DOM?</p>
+        <hr class="mb-10">
+        <p class="text-2xl">বিভিন্ন ভাবে DOM হতে উপাদান নির্বাচন করা যায় সেগুলো হল ঃgetElementsByName(),querySelectorAll(),querySelector() ,getElementsByTagName() ,getElementsByClassName() etc </p>
+    </div>
+    <div class="bg-white p-10">
+        <p class="text-3xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+        <hr class="mb-10">
+        <p class="text-2xl"> innerHtml: HTML ট্যাগসহ ভিতরের লেখা গুলো পাওয়ার জন্য ব্যবহার করা হয় 
+            innerText: ট্যাগ বাদে শুধু ট্যাগ এর ভেতরের লেখা গুলা পাওয়ার জন্য ব্যাবহার করা হয় 
+        textContent : উপস্থিত অনুপস্থিত সকল টেক্সট পাওয়ার জন্য ব্যাবহার করা হয়  </p>
+    </div>
+    <div class="bg-white p-10">
+        <p class="text-3xl font-bold">Question-3: What is event delegation in the DOM?</p>
+        <hr class="mb-10">
+        <p class="text-2xl"> event delegation হল এমন একটি প্রযুক্তি যা  child element এর জন্য আলাদা আলাদা addEvenListener() ব্যাবহার না করে child এর  parent element এ যোগ করা হয় </p>
+    </div>
+    <div class="bg-white p-10">
+        <p class="text-3xl font-bold">Question-4: What is event bubbling in the DOM?</p>
+        <hr class="mb-10">
+        <p class="text-2xl"> event delegation হল এমন একটি প্রযুক্তি যা  child element এর জন্য আলাদা আলাদা addEvenListener() ব্যাবহার না করে child এর  parent element এ যোগ করা হয়। parent element child element এর জন্য  addEventListener() এর কাজটি করে একে event bubbling বলে </p>
+    </div>
+    <div class="bg-white p-10">
+        <p class="text-3xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+        <hr class="mb-10">
+        <p class="text-2xl"> document.createElement() ব্যাবহার করে উপাদান create করতে পারি। উপাদান add করার জন্য appendChild() ব্যাবহার করতে পারি ।  removeChild() or remove() ব্যাবহার করে উপাদান remove করতে পারি  </p>
+    </div>
+    
+   </section>
+   <script src="./script/page-2.js"></script>
 </body>
 </html>

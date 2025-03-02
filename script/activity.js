@@ -6,6 +6,7 @@ function updateTime(id) {
   createElement.innerText = "you have completed the task :" + timeString;
   createElement.classList.add("comment")
   taskContainer.append(createElement)
+
 //   = "you have completed the task " + timeString;
 }
 
